@@ -1,0 +1,12 @@
+{
+  "name": "JRおでかけネット for Googleカレンダー™",
+  "description": "JRおでかけネットの検索結果にGoogleカレンダー™への登録リンクを追加します。",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "author": "Masayuki Higashino",
+  "content_scripts": [{
+    "matches": ["http://time.jr-odekake.net/cgi-bin/mydia.cgi*"],
+    "js": ["jquery-1.10.2.js", "moment-2.4.0.min.js", "content.js"],
+    "run_at": "document_end"
+  }]
+}
